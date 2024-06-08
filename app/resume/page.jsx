@@ -159,11 +159,17 @@ const Resume = () => {
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{experience.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                <p className="max-w-[600px] xl:max-w-[720px] text-white/60 mx-auto xl:mx-0">
                   {experience.description}
                 </p>
                 <ScrollArea className="h-[400px]">
-                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-[30px]">
+                  <ul
+                    className={`${
+                      experience.items.length === 1
+                        ? "grid grid-cols-1 gap-[30px]"
+                        : "grid grid-cols-1 md:grid-cols-2 gap-[30px]"
+                    }`}
+                  >
                     {experience.items.map((item, index) => {
                       return (
                         <li
@@ -195,7 +201,13 @@ const Resume = () => {
                     {education.description}
                   </p>
                   <ScrollArea className="h-[400px]">
-                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-[30px]">
+                    <ul
+                      className={`${
+                        education.items.length === 1
+                          ? "grid grid-cols-1 gap-[30px]"
+                          : "grid grid-cols-1 md:grid-cols-2 gap-[30px]"
+                      }`}
+                    >
                       {education.items.map((item, index) => {
                         return (
                           <li
@@ -218,7 +230,13 @@ const Resume = () => {
                       })}
                     </ul>
                     <h3 className="mt-8">Courses</h3>
-                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-[30px] mt-8">
+                    <ul
+                      className={`${
+                        education.courses.length === 1
+                          ? "grid grid-cols-1 gap-[30px]"
+                          : "grid grid-cols-1 md:grid-cols-2 gap-[30px]"
+                      }`}
+                    >
                       {education.courses.map((item, index) => {
                         return (
                           <li
@@ -282,15 +300,15 @@ const Resume = () => {
             >
               <div className="flex flex-col gap-[30px]">
                 <h3 className="text-4xl font-bold">{about.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                <p className="max-w-[600px] xl:max-w-[720px] text-white/60 mx-auto xl:mx-0">
                   {about.description}
                 </p>
-                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
+                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] xl:max-w-[740px] mx-auto xl:mx-0">
                   {about.info.map((item, index) => {
                     return (
                       <li
                         key={index}
-                        className="flex items-center justify-center gap-4"
+                        className="flex items-center justify-center xl:items-start xl:justify-start gap-4"
                       >
                         <span className="text-white/60">{item.fieldName}</span>
                         <span className="text-xl">{item.fieldValue}</span>

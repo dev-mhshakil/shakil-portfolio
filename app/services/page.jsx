@@ -11,27 +11,27 @@ const services = [
       "I specialize in creating responsive, user-friendly websites and web applications using the latest technologies to deliver efficient, scalable, and secure solutions for your business needs.",
     href: "",
   },
-  {
-    num: "02",
-    title: "UI/UX",
-    description:
-      "I specialize in creating responsive, user-friendly websites and web applications using the latest technologies to deliver efficient, scalable, and secure solutions for your business needs.",
-    href: "",
-  },
-  {
-    num: "03",
-    title: "Logo Desing",
-    description:
-      "I specialize in creating responsive, user-friendly websites and web applications using the latest technologies to deliver efficient, scalable, and secure solutions for your business needs.",
-    href: "",
-  },
-  {
-    num: "04",
-    title: "SEO",
-    description:
-      "I specialize in creating responsive, user-friendly websites and web applications using the latest technologies to deliver efficient, scalable, and secure solutions for your business needs.",
-    href: "",
-  },
+  // {
+  //   num: "02",
+  //   title: "UI/UX",
+  //   description:
+  //     "I specialize in creating responsive, user-friendly websites and web applications using the latest technologies to deliver efficient, scalable, and secure solutions for your business needs.",
+  //   href: "",
+  // },
+  // {
+  //   num: "03",
+  //   title: "Logo Desing",
+  //   description:
+  //     "I specialize in creating responsive, user-friendly websites and web applications using the latest technologies to deliver efficient, scalable, and secure solutions for your business needs.",
+  //   href: "",
+  // },
+  // {
+  //   num: "04",
+  //   title: "SEO",
+  //   description:
+  //     "I specialize in creating responsive, user-friendly websites and web applications using the latest technologies to deliver efficient, scalable, and secure solutions for your business needs.",
+  //   href: "",
+  // },
 ];
 
 import { motion } from "framer-motion";
@@ -46,7 +46,11 @@ const Services = () => {
             opacity: 1,
             transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
           }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-[60px]"
+          className={`${
+            services.length === 1
+              ? "grid grid-cols-1 gap-[60px]"
+              : "grid grid-cols-1 md:grid-cols-2 gap-[60px]"
+          }`}
         >
           {services.map((service, index) => {
             return (

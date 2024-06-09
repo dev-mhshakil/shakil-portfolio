@@ -62,12 +62,3 @@ const Home = () => {
 };
 
 export default Home;
-
-// export async function getServerSideProps() {
-//   console.log(REACT_APP_SERVICE_ID);
-//   return {
-//     props: {
-//       hello: "hello",
-//     },
-//   };
-// }

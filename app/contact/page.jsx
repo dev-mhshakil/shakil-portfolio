@@ -74,7 +74,6 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
           toast.success("Message sent successfully!");
           setFormData({
             firstname: "",
@@ -86,7 +85,6 @@ const Contact = () => {
           });
         },
         (error) => {
-          console.log(error.text);
           toast.error("Failed to send message. Please try again.");
         }
       );

@@ -76,6 +76,14 @@ const Contact = () => {
         (result) => {
           console.log(result.text);
           toast.success("Message sent successfully!");
+          setFormData({
+            firstname: "",
+            lastname: "",
+            email: "",
+            phone: "",
+            service: "",
+            message: "",
+          });
         },
         (error) => {
           console.log(error.text);

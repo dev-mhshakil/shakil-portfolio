@@ -1,11 +1,22 @@
+"use client"; // Ensure this component is a Client Component
+
 import Social from "@/components/Social";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
-import { FaGithub } from "react-icons/fa";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
 
+import downloadPDF from "@/utils/downloadPDF";
+
 const Home = () => {
+  const downloadResume = (e) => {
+    e.preventDefault();
+    const pdfUrl =
+      "https://drive.google.com/uc?export=download&id=1gX0uG-A3_OycsKPlrH8lcKMQvnyJ2c2n";
+    const filename = "resume.pdf";
+    downloadPDF(pdfUrl, filename);
+  };
+
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
@@ -13,7 +24,7 @@ const Home = () => {
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Software Developer</span>
             <h1 className="h1">
-              Hello I&apos;m <br />{" "}
+              Hello I&apos;m <br />
               <span className="text-red-500">Mehedi Hasan Shakil</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
@@ -22,8 +33,9 @@ const Home = () => {
             </p>
 
             {/* btn and socials */}
-            <div className="flex flex-col xl:flex-row  items-center gap-8">
+            <div className="flex flex-col xl:flex-row items-center gap-8">
               <Button
+                onClick={downloadResume}
                 variant="outline"
                 size="lg"
                 className="uppercase flex items-center gap-2"
@@ -50,3 +62,12 @@ const Home = () => {
 };
 
 export default Home;
+
+// export async function getServerSideProps() {
+//   console.log(REACT_APP_SERVICE_ID);
+//   return {
+//     props: {
+//       hello: "hello",
+//     },
+//   };
+// }

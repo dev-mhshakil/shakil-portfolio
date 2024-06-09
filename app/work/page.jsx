@@ -21,14 +21,14 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "frontend",
+    category: "fullstack",
     title: "Project 1",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi aut facilis beatae atque neque, assumenda nostrum quam laborum repellat sapiente.",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
+      "BookHive is a RESTful API designed to manage a collection of books and users' reading lists. This API allows users to fetch book details, manage their reading lists, and handle user authentication efficiently.",
+    stack: [{ name: "React.js" }, { name: "Node.js" }, { name: "Javascript" }],
     image: "/assets/work/thumb1.png",
-    live: "https://github.com/dev-mhshakil",
-    github: "https://github.com/dev-mhshakil",
+    live: "https://book-hive-delta.vercel.app/",
+    github: "https://github.com/dev-mhshakil/book-hive",
   },
   {
     num: "02",

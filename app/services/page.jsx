@@ -6,25 +6,25 @@ import { BsArrowDownRight } from "react-icons/bs";
 const services = [
   {
     num: "01",
-    title: "Web Development",
+    title: "Frontend Development",
     description:
       "I specialize in creating responsive, user-friendly websites and web applications using the latest technologies to deliver efficient, scalable, and secure solutions for your business needs.",
-    href: "",
+    href: "https://github.com/dev-mhshakil/nextjs-e-commerce",
   },
-  // {
-  //   num: "02",
-  //   title: "UI/UX",
-  //   description:
-  //     "I specialize in creating responsive, user-friendly websites and web applications using the latest technologies to deliver efficient, scalable, and secure solutions for your business needs.",
-  //   href: "",
-  // },
-  // {
-  //   num: "03",
-  //   title: "Logo Desing",
-  //   description:
-  //     "I specialize in creating responsive, user-friendly websites and web applications using the latest technologies to deliver efficient, scalable, and secure solutions for your business needs.",
-  //   href: "",
-  // },
+  {
+    num: "02",
+    title: "Backend Development",
+    description:
+      "I specialize in creating responsive, user-friendly websites and web applications using the latest technologies to deliver efficient, scalable, and secure solutions for your business needs.",
+    href: "https://github.com/dev-mhshakil/kenabecha-server",
+  },
+  {
+    num: "03",
+    title: "Fullstack Development",
+    description:
+      "I specialize in creating responsive, user-friendly websites and web applications using the latest technologies to deliver efficient, scalable, and secure solutions for your business needs.",
+    href: "https://github.com/dev-mhshakil/book-hive",
+  },
   // {
   //   num: "04",
   //   title: "SEO",

@@ -22,24 +22,29 @@ const projects = [
   {
     num: "01",
     category: "fullstack",
-    title: "Project 1",
+    title: "Academix (LMS)",
+    description:
+      "Academix is a Learning Management System (LMS) designed to facilitate online education. It offers user authentication, role-based access, course management, enhancing the learning experience for administrators, teachers, and students.",
+    stack: [
+      { name: "React.js" },
+      { name: "Tailwindcss" },
+      { name: "Node.js" },
+      { name: "JavaScript" },
+    ],
+    image: "/assets/work/thumb2.png",
+    live: "https://academix-client-two.vercel.app/",
+    github: "https://github.com/dev-mhshakil/academix-client",
+  },
+  {
+    num: "02",
+    category: "fullstack",
+    title: "BookHive",
     description:
       "BookHive is a RESTful API designed to manage a collection of books and users' reading lists. This API allows users to fetch book details, manage their reading lists, and handle user authentication efficiently.",
     stack: [{ name: "React.js" }, { name: "Node.js" }, { name: "Javascript" }],
     image: "/assets/work/thumb1.png",
     live: "https://book-hive-delta.vercel.app/",
     github: "https://github.com/dev-mhshakil/book-hive",
-  },
-  {
-    num: "02",
-    category: "fullstack",
-    title: "Project 2",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi aut facilis beatae atque neque, assumenda nostrum quam laborum repellat sapiente.",
-    stack: [{ name: "Next.js" }, { name: "Tailwindcss" }, { name: "Node.js" }],
-    image: "/assets/work/thumb2.png",
-    live: "https://github.com/dev-mhshakil",
-    github: "https://github.com/dev-mhshakil",
   },
   {
     num: "03",

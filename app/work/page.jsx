@@ -46,17 +46,17 @@ const projects = [
     live: "https://book-hive-delta.vercel.app/",
     github: "https://github.com/dev-mhshakil/book-hive",
   },
-  {
-    num: "03",
-    category: "frontend",
-    title: "Project 3",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi aut facilis beatae atque neque, assumenda nostrum quam laborum repellat sapiente.",
-    stack: [{ name: "Next.js" }, { name: "Tailwindcss" }],
-    image: "/assets/work/thumb3.png",
-    live: "https://github.com/dev-mhshakil",
-    github: "https://github.com/dev-mhshakil",
-  },
+  // {
+  //   num: "03",
+  //   category: "frontend",
+  //   title: "Project 3",
+  //   description:
+  //     "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi aut facilis beatae atque neque, assumenda nostrum quam laborum repellat sapiente.",
+  //   stack: [{ name: "Next.js" }, { name: "Tailwindcss" }],
+  //   image: "/assets/work/thumb3.png",
+  //   live: "https://github.com/dev-mhshakil",
+  //   github: "https://github.com/dev-mhshakil",
+  // },
 ];
 
 const Work = () => {
